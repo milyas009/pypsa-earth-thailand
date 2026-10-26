@@ -167,8 +167,70 @@ def fig_robustness():
     plt.close(fig)
 
 
+def fig_network(scenario="LC_CAP"):
+    """Six-node network: regions, lines and demand (a); solar and battery capacity of a case by node (b)."""
+    import geopandas as gpd
+    from matplotlib.lines import Line2D
+
+    regions = gpd.read_file(ROOT / "resources/TH2037_base/bus_regions/regions_onshore_elec_s_6.geojson").set_index("name")
+    n = pypsa.Network(RES / f"{scenario}.nc")
+    w = n.snapshot_weightings.generators
+    buses = n.buses.loc[regions.index]
+    names = {"TH0 0": "Bangkok and east", "TH0 1": "North", "TH0 2": "South", "TH0 3": "Northeast",
+             "TH0 4": "Lower central", "TH1 0": "Upper central"}
+    # label offsets (degrees) chosen so that labels do not overlap; upper central sits next to lower central
+    off_a = {"TH0 0": (0.7, -0.5), "TH0 1": (-0.6, 0.5), "TH0 2": (0.6, 0.0), "TH0 3": (0.6, 0.3),
+             "TH0 4": (-0.7, -0.2), "TH1 0": (1.2, -0.3)}
+    demand = n.loads_t.p_set.mul(w, axis=0).sum().groupby(n.loads.bus).sum() / 1e6
+    g, st = n.generators, n.stores
+    solar = g[g.carrier == "solar"].groupby("bus").p_nom_opt.sum().reindex(buses.index, fill_value=0) / 1e3
+    batt = st[st.carrier == "battery"].groupby(st.bus.str.replace(" battery", "")).e_nom_opt.sum().reindex(buses.index, fill_value=0) / 1e3
+    fig, axes = plt.subplots(1, 2, figsize=(5.4, 4.4))
+    for ax in axes:
+        regions.dissolve(level=0).plot(ax=ax, color="#f2f1ec", edgecolor=MUTED, linewidth=0.5)
+        for _, l in n.lines.iterrows():
+            new = l.s_nom == 0
+            ax.plot([buses.x[l.bus0], buses.x[l.bus1]], [buses.y[l.bus0], buses.y[l.bus1]],
+                    color=COLORS[1] if new else INK, linewidth=0.5 + l.s_nom_opt / 12000,
+                    linestyle="--" if new else "-", zorder=2)
+        ax.set_axis_off()
+        ax.set_xlim(96.5, 107.5)
+    ax = axes[0]
+    ax.scatter(buses.x, buses.y, s=demand.reindex(buses.index) * 1.5, color=COLORS[0], zorder=3, edgecolor="white")
+    for b, r in buses.iterrows():
+        dx, dy = off_a[b]
+        ax.text(r.x + dx, r.y + dy, f"{names[b]}\n{demand[b]:.0f} TWh", fontsize=6.5, ha="left" if dx > 0 else "right",
+                va="center", color=INK, zorder=4, bbox=dict(fc="white", ec="none", alpha=0.75, pad=0.6))
+    lao = n.generators[n.generators.carrier == "imports"].bus.iloc[0]
+    ax.annotate("Lao hydropower\nimports, 7.1 GW", (buses.x[lao], buses.y[lao]), xytext=(104.3, 19.6), fontsize=6.5,
+                color=COLORS[4], arrowprops=dict(arrowstyle="->", color=COLORS[4], lw=0.8))
+    ax.legend(handles=[Line2D([], [], color=INK, lw=1.8, label="line (width: capacity)"),
+                       Line2D([], [], color=COLORS[1], lw=1, ls="--", label="new connection"),
+                       Line2D([], [], marker="o", ls="", color=COLORS[0], ms=6, label="node (area: demand)")],
+              loc="lower left", fontsize=6.5)
+    ax.set_title("(a) Network and demand in 2037", fontsize=8, loc="left")
+    ax = axes[1]
+    ax.scatter(buses.x - 0.2, buses.y, s=solar * 5, color=COLORS[3], zorder=3, edgecolor="white")
+    ax.scatter(buses.x + 0.2, buses.y, s=batt * 5, color=COLORS[6], zorder=3, edgecolor="white")
+    for b, r in buses.iterrows():
+        if b == "TH1 0" or solar[b] + batt[b] < 1:
+            continue
+        ax.text(r.x - 0.75, r.y, f"{solar[b]:.1f}", fontsize=6.5, ha="right", va="center", color="#9a6a00", zorder=4,
+                bbox=dict(fc="white", ec="none", alpha=0.75, pad=0.5))
+        ax.text(r.x + 0.75, r.y, f"{batt[b]:.1f}", fontsize=6.5, ha="left", va="center", color=COLORS[6], zorder=4,
+                bbox=dict(fc="white", ec="none", alpha=0.75, pad=0.5))
+    ax.legend(handles=[Line2D([], [], marker="o", ls="", color=COLORS[3], ms=6, label="solar PV (GW)"),
+                       Line2D([], [], marker="o", ls="", color=COLORS[6], ms=6, label="batteries (GWh)")],
+              loc="lower left", fontsize=6.5)
+    ax.set_title(f"(b) Solar and batteries, {CORE[scenario]}", fontsize=8, loc="left")
+    fig.tight_layout()
+    fig.savefig(FIG / "fig_network.pdf", bbox_inches="tight")
+    plt.close(fig)
+
+
 if __name__ == "__main__":
     FIG.mkdir(parents=True, exist_ok=True)
+    fig_network()
     fig_mix()
     fig_sweep()
     fig_robustness()

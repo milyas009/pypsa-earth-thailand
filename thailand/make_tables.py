@@ -78,7 +78,7 @@ def results_table():
         ("Wind (GW)", "wind_GW", "{:.1f}"),
         ("New OCGT (GW)", "OCGT_GW", "{:.1f}"),
         ("Battery energy (GWh)", "battery_GWh", "{:.1f}"),
-        ("VRE curtailment (\\%)", "VRE_curtailment_pct", "{:.1f}"),
+        ("Solar and wind curtailment (\\%)", "VRE_curtailment_pct", "{:.1f}"),
     ]
     lines = [r"\begin{tabular}{@{}lrrr@{}}", r"\toprule", "Indicator & " + " & ".join(cols.values()) + r" \\", r"\midrule"]
     for name, key, fmt in rows:
