@@ -1,0 +1,188 @@
+Unnamed: 0,Name,Fueltype,Technology,Set,Country,Capacity,Owner,Efficiency,Duration,Volume_Mm3,DamHeight_m,StorageCapacity_MWh,DateIn,DateRetrofit,DateOut,lat,lon,EIC,projectID,bus,Technology_Category
+1,Fang Geothermal Power Plant,Geothermal,Steam Turbine,PP,TH,0.3,EGAT Website (only for EGAT PP),,,0,0,0,1989,1989,2070,19.923,99.143,"{nan, nan}",,,
+2,Bang Pakong Power Plant block 1,CCGT,CCGT,PP,TH,1386,EGAT Website (only for EGAT PP),,,0,0,0,1991,1991,2038,13.501,101.0253,"{nan, nan, nan, nan, nan, nan, nan}","{'GGPT': {'L100000405362'}, 'GEO': {'GEO-41494', 'GEO-41553'}, 'GPD': {'WRI1000161'}}",18,CCGT
+3,Bang Pakong Power Plant block 5,CCGT,CCGT,PP,TH,710,EGAT Website (only for EGAT PP),,,0,0,0,2008,2008,2035,13.501,101.0253,"{nan, nan, nan, nan, nan, nan, nan}","{'GGPT': {'L100000405362'}, 'GEO': {'GEO-41494', 'GEO-41553'}, 'GPD': {'WRI1000161'}}",18,CCGT
+4,South Bangkok Power plant block 3,CCGT,CCGT,PP,TH,710,EGAT Website (only for EGAT PP),,,0,0,0,1971,1971,2035,13.617,100.559,"{nan, nan}","{'GGPT': {'L100000405424'}, 'GEO': {'GEO-41551', 'GEO-41552'}, 'GPD': {'WRI1000164'}}",0,CCGT
+5,South Bangkok Power plant block 4,CCGT,CCGT,PP,TH,1220,EGAT Website (only for EGAT PP),,,0,0,0,1971,1971,2040,13.617,100.559,"{nan, nan}","{'GGPT': {'L100000405424'}, 'GEO': {'GEO-41551', 'GEO-41552'}, 'GPD': {'WRI1000164'}}",1,CCGT
+6,Nam Phong Power Plant block 1,CCGT,CCGT,PP,TH,325,EGAT Website (only for EGAT PP),,,0,0,0,1991,1991,2025,16.682,102.7422,"{nan, nan}","{'GGPT': {'L100000405405'}, 'GEO': {'GEO-41554'}, 'GPD': {'WRI1000165'}}",159,CCGT
+7,Nam Phong Power Plant block 2,CCGT,CCGT,PP,TH,325,EGAT Website (only for EGAT PP),,,0,0,0,1991,1991,2025,16.682,102.7422,"{nan, nan}","{'GGPT': {'L100000405405'}, 'GEO': {'GEO-41554'}, 'GPD': {'WRI1000165'}}",160,CCGT
+8,Wang Noi Power Plant Block 4,CCGT,CCGT,PP,TH,750,EGAT Website (only for EGAT PP),,,0,0,0,1996,2011,2051,14.2324,100.7805,"{nan, nan, nan, nan}","{'GGPT': {'L100000405432'}, 'GEO': {'GEO-41491'}, 'GPD': {'WRI1000169'}}",91,CCGT
+9,Chana Power Plant block 1,CCGT,CCGT,PP,TH,710,EGAT Website (only for EGAT PP),,,0,0,0,2008,2008,2034,6.9553,100.7076,"{nan, nan}","{'GGPT': {'L100000405371'}, 'GEO': {'GEO-41514'}, 'GPD': {'WRI1000167'}}",76,CCGT
+10,Chana Power Plant block 2,CCGT,CCGT,PP,TH,766,EGAT Website (only for EGAT PP),,,0,0,0,2008,2008,2048,6.9553,100.7076,"{nan, nan}","{'GGPT': {'L100000405371'}, 'GEO': {'GEO-41514'}, 'GPD': {'WRI1000167'}}",77,CCGT
+11,North Bangkok Power Plant Block 1,CCGT,CCGT,PP,TH,670,EGAT Website (only for EGAT PP),,,0,0,0,2010,2010,2036,13.8129,100.5092,"{nan, nan}","{'GGPT': {'L100000405410'}, 'GEO': {'GEO-41515'}, 'GPD': {'WRI1000162'}}",30,CCGT
+12,North Bangkok Power Plant Block 2,CCGT,CCGT,PP,TH,828,EGAT Website (only for EGAT PP),,,0,0,0,2010,2010,2050,13.8129,100.5092,"{nan, nan}","{'GGPT': {'L100000405410'}, 'GEO': {'GEO-41515'}, 'GPD': {'WRI1000162'}}",31,CCGT
+13,Bang Pakong Power Plant unit 3,Hard Coal,Steam Turbine,PP,TH,810,EGAT Website (only for EGAT PP),,,0,0,0,1991,1991,2027,13.501,101.0253,"{nan, nan, nan, nan, nan, nan, nan}","{'GGPT': {'L100000405362'}, 'GEO': {'GEO-41494', 'GEO-41553'}, 'GPD': {'WRI1000161'}}",18,CCGT
+14,Bang Pakong Power Plant unit 4,Hard Coal,Steam Turbine,PP,TH,576,EGAT Website (only for EGAT PP),,,0,0,0,1991,1991,2028,13.501,101.0253,"{nan, nan, nan, nan, nan, nan, nan}","{'GGPT': {'L100000405362'}, 'GEO': {'GEO-41494', 'GEO-41553'}, 'GPD': {'WRI1000161'}}",19,CCGT
+15,Mae Moh Power Plant Unit 8-9,Lignite,Steam Turbine,PP,TH,540,EGAT Website (only for EGAT PP),,,0,0,0,2006,1997,2032,18.296,99.752,"{nan, nan}","{'GCPT': {'G100000106550', 'G100000106556', 'G100000106549', 'G100000106557', 'G100000106548', 'G100000106551', 'G100000106555', 'G100000106547'}, 'GEO': {'GEO-41479'}}",37,Lignite
+16,Mae Moh Power Plant Unit 10-13,Lignite,Steam Turbine,PP,TH,1080,EGAT Website (only for EGAT PP),,,0,0,0,2006,1997,2025,18.296,99.752,"{nan, nan}","{'GCPT': {'G100000106550', 'G100000106556', 'G100000106549', 'G100000106557', 'G100000106548', 'G100000106551', 'G100000106555', 'G100000106547'}, 'GEO': {'GEO-41479'}}",37,Lignite
+17,Mae Moh Power Plant Unit 14,Lignite,Steam Turbine,PP,TH,600,EGAT Website (only for EGAT PP),,,0,0,0,2006,1997,2026,18.296,99.752,"{nan, nan}","{'GCPT': {'G100000106550', 'G100000106556', 'G100000106549', 'G100000106557', 'G100000106548', 'G100000106551', 'G100000106555', 'G100000106547'}, 'GEO': {'GEO-41479'}}",37,Lignite
+18,Krabi Power Plant,Hard Coal,Steam Turbine,PP,TH,120,EGAT Website (only for EGAT PP),,,0,0,0,2003,2003,2043,7.9934,99.0482,{nan},"{'GGPT': {'L100000103575'}, 'GEO': {'GEO-41555'}, 'GPD': {'WRI1000163'}}",180,CCGT
+19,Mae Hong Son Units 2-6,Oil,Steam Turbine,PP,TH,4.4,EGAT Website (only for EGAT PP),,,0,0,0,2010,2010,2060,19.296,97.986,{nan},,,
+20,Su-ngai Kolok Units 1-4,Oil,Steam Turbine,PP,TH,8,EGAT Website (only for EGAT PP),,,0,0,0,2010,2010,2060,6.03,101.967,{nan},,,
+21,Ban Taun Units 1-4,Oil,Steam Turbine,PP,TH,8,EGAT Website (only for EGAT PP),,,0,0,0,2010,2010,2060,9.2,99.183,{nan},,,
+22,Bo Thong Units 1-5,Oil,Steam Turbine,PP,TH,10,EGAT Website (only for EGAT PP),,,0,0,0,2010,2010,2060,13.56,101.45,{nan},,,
+23,Lamtakong Jolabha Vadhana Power Plant,Hydro,Pumped Storage,Store,TH,1000,EGAT Website (only for EGAT PP),,,0,0,0,2001,2001,2101,14.8653,101.5603,{nan},"{'GHPT': {'G603605'}, 'GEO': {'GEO-45330'}, 'GPD': {'WRI1000170'}}",362,Hydro
+24,Nam Pung Dam Thailand,Hydro,Reservoir,PP,TH,6,EGAT Website (only for EGAT PP),,,0,0,0,1965,1965,2065,16.97525,103.98574,"{nan, nan}",{'GEO': {'GEO-45327'}},215,Hydro
+25,Ban Santi,Hydro,Reservoir,PP,TH,1.28,EGAT Website (only for EGAT PP),,,0,0,0,1993,1993,2093,19.99,99.851,"{nan, nan}",,,
+26,Mae Ngat Somboon Chon Dam Thailand,Hydro,Reservoir,PP,TH,9,EGAT Website (only for EGAT PP),,,0,0,0,1986,1986,2086,19.162,99.0352,"{nan, nan}",{'GEO': {'GEO-45329'}},222,Hydro
+27,Huai Kum,Hydro,Reservoir,PP,TH,1.06,EGAT Website (only for EGAT PP),,,0,0,0,1996,1996,2096,18.36,98.986,"{nan, nan}",,,
+28,Naresuan Small Hydropower Plant,Hydro,Reservoir,PP,TH,8,EGAT Website (only for EGAT PP),,,0,0,0,1982,1996,2081,17.0294,100.1833,"{nan, nan}",,,Hydro
+29,Khlong Chong Klum,Hydro,Reservoir,PP,TH,0.02,EGAT Website (only for EGAT PP),,,0,0,0,2007,2007,2107,16.04,101.077,"{nan, nan}",,,
+30,Ban Yang,Hydro,Reservoir,PP,TH,0.12,EGAT Website (only for EGAT PP),,,0,0,0,2007,2007,2107,15.66,100.167,"{nan, nan}",,,
+31,Ban Khun Klang,Hydro,Reservoir,PP,TH,0.2,EGAT Website (only for EGAT PP),,,0,0,0,2008,2008,2107,18.56,98.486,"{nan, nan}",,,
+32,Huai Kui Mang,Hydro,Reservoir,PP,TH,0.1,EGAT Website (only for EGAT PP),,,0,0,0,2007,2007,2107,20.2,99.883,"{nan, nan}",,,
+33,Khun Dan Prakan Chon Dam,Hydro,Reservoir,PP,TH,10,EGAT Website (only for EGAT PP),,,0,0,0,2005,2005,2107,14.31458517,101.3154659,"{nan, nan}",,,Hydro
+34,Pasak Jolasid Small Hydropower Plant,Hydro,Reservoir,PP,TH,6.7,EGAT Website (only for EGAT PP),,,0,0,0,1999,1999,2081,14.86191906,101.0660126,"{nan, nan}",,,Hydro
+35,Kiew Kho Ma Dam,Hydro,Reservoir,PP,TH,5.5,EGAT Website (only for EGAT PP),,,0,0,0,2015,2015,2081,18.91,99.88,"{nan, nan}",,,Hydro
+36,Chulabhorn Downstream Hydropower Plant,Hydro,Run-Of-River,PP,TH,1.25,EGAT Website (only for EGAT PP),,,0,0,0,2010,2010,2081,16.53,101.4,"{nan, nan}",,,Hydro
+37,Khlong Tron small Hydropower Plant,Hydro,Reservoir,PP,TH,2.5,EGAT Website (only for EGAT PP),,,0,0,0,1998,1998,2081,17.59,100.54566,"{nan, nan}",,,Hydro
+38,Pha Chuk Dam,Hydro,Run-Of-River,PP,TH,14,EGAT Website (only for EGAT PP),,,0,0,0,2010,2010,2081,17.65,100.26799,{nan},,,Hydro
+39,Bhumibol Dam,Hydro,Pumped Storage,Store,TH,779.2,EGAT Website (only for EGAT PP),,,0,0,0,1964,1992,2092,17.2414,98.9732,"{nan, nan}","{'GHPT': {'G603603'}, 'GEO': {'GEO-41501'}, 'GPD': {'WRI1000172'}}",327,Hydro
+40,Sirikit Dam,Hydro,Reservoir,PP,TH,500,EGAT Website (only for EGAT PP),,,0,0,0,1974,1974,2074,17.7648,100.5634,{nan},"{'GHPT': {'G603608'}, 'GEO': {'GEO-41504'}, 'GPD': {'WRI1000173'}}",325,Hydro
+41,Ubol Ratana Dam Thailand,Hydro,Reservoir,PP,TH,25.2,EGAT Website (only for EGAT PP),,,0,0,0,1966,1966,2066,16.775394,102.618325,"{nan, nan}",{'GEO': {'GEO-41511'}},236,Hydro
+42,Sirindhorn Dam Thailand,Hydro,Reservoir,PP,TH,36,EGAT Website (only for EGAT PP),,,0,0,0,1971,1971,2071,15.20634,105.4292,"{nan, nan, nan}","{'GEO': {'GEO-41507'}, 'GPD': {'WRI1000180'}}",302,Hydro
+43,Chulabhorn Dam Hydroelectricl Thailand,Hydro,Reservoir,PP,TH,40,EGAT Website (only for EGAT PP),,,0,0,0,1972,1972,2072,16.5362,101.65,"{nan, nan}","{'GEO': {'GEO-41512'}, 'GPD': {'WRI1000176'}}",384,Hydro
+44,Srinagarind Dam,Hydro,Reservoir,PP,TH,720,EGAT Website (only for EGAT PP),,,0,0,0,1980,1980,2080,14.4075,99.1261,{nan},"{'GHPT': {'G603609'}, 'GEO': {'GEO-41505'}, 'GPD': {'WRI1000175'}}",70,Hydro
+45,Vajiralongkorn Dam,Hydro,Reservoir,PP,TH,300,EGAT Website (only for EGAT PP),,,0,0,0,1984,1984,2084,14.7998,98.597,{nan},"{'GHPT': {'G603610'}, 'GEO': {'GEO-41503'}, 'GPD': {'WRI1000177'}}",329,Hydro
+46,Tha Thung Na Dam Thailand,Hydro,Reservoir,PP,TH,39,EGAT Website (only for EGAT PP),,,0,0,0,1981,1981,2081,14.2336,99.2359,"{nan, nan}",{'GEO': {'GEO-41510'}},195,Hydro
+47,Kaeng Krachan Dam Thailand,Hydro,Reservoir,PP,TH,19,EGAT Website (only for EGAT PP),,,0,0,0,1974,1974,2074,12.9158,99.6309,"{nan, nan}",{'GEO': {'GEO-45328'}},376,Hydro
+48,Bang Lang,Hydro,Reservoir,PP,TH,84,EGAT Website (only for EGAT PP),,,0,0,0,1981,1981,2081,6.1709,101.3159,{nan},"{'GHPT': {'G603602'}, 'GEO': {'GEO-41516'}, 'GPD': {'WRI1000179'}}",319,Hydro
+49,Rajjaprabha,Hydro,Reservoir,PP,TH,240,EGAT Website (only for EGAT PP),,,0,0,0,1987,1987,2087,8.973,98.8066,{nan},"{'GHPT': {'G603607'}, 'GEO': {'GEO-41513'}, 'GPD': {'WRI1000174'}}",42,Hydro
+50,Chao Phraya Dam,Hydro,Reservoir,PP,TH,12,EGAT Website (only for EGAT PP),,,0,0,0,1957,1996,2081,15.0912,100.3611,"{nan, nan}",,,Hydro
+51,Pak Mun Dam,Hydro,Run-Of-River,PP,TH,136,EGAT Website (only for EGAT PP),,,0,0,0,1993,1993,2093,15.2826,105.4683,{nan},"{'GHPT': {'G603606'}, 'GEO': {'GEO-41502'}, 'GPD': {'WRI1000178'}}",366,Hydro
+52,Kwai Noi Bumrung Dan Dam,Hydro,Reservoir,PP,TH,30,EGAT Website (only for EGAT PP),,,0,0,0,2012,2012,2081,17.06,100.27,"{nan, nan}",,,Hydro
+53,Mae Klong Dam,Hydro,Reservoir,PP,TH,12,EGAT Website (only for EGAT PP),,,0,0,0,2001,2002,2081,13.95494745,99.62499826,"{nan, nan}",,,Hydro
+54,Houay Ho Power Plant,Hydro,Reservoir,PP,TH,126,EGAT Website (only for EGAT PP),,,0,0,0,1999,,2029,15.006,107.24,"{nan, nan}",,,Hydro
+55,Xayaburi Hydroelectric Power Plant,imports,Run-Of-River,PP,TH,1220,Imports Energy By EGAT from Laos,,,0,0,0,2019,2019,2119,19.23,101.88,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+56,Hongsa Thermal Power Plant,imports,Steam Turbine,PP,TH,1470,Imports Energy By EGAT from Laos,,,0,0,0,2015,2015,2041,19.46,101.4,"{nan, nan}",{'GEO': {'GEO-45327'}},,Fossil
+57,Nam Theun 2 Hydroelectric Power Plant,imports,Reservoir,PP,TH,900,Imports Energy By EGAT from Laos,,,0,0,0,2010,2010,2035,17.98,104.97,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+58,Theun-Hinboun Power Plant,imports,Run-Of-River,PP,TH,490,Imports Energy By EGAT from Laos,,,0,0,0,1998,2012,2112,18.23,104.09,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+59,Nam Ngum 2 Hydroelectric Power Plant,imports,Reservoir,PP,TH,560,Imports Energy By EGAT from Laos,,,0,0,0,2010,2010,2110,18.42,102.83,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+60,Nam Ngum 3 Hydroelectric Power Plant,imports,Reservoir,PP,TH,480,Imports Energy By EGAT from Laos,,,0,0,0,2025,2025,2125,18.4,102.8,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+61,Don Sahong Hydroelectric Power Plant,imports,Reservoir,PP,TH,260,Imports Energy By EGAT from Laos,,,0,0,0,2019,2019,2119,14.1,105.95,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+62,Other Laos Hydro Imports,imports,Reservoir,PP,TH,555,Imports Energy By EGAT from Laos,,,0,0,0,2020,2020,2120,17,103,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+63,Malaysia HVDC Interconnection,imports,Steam Turbine,PP,TH,300,Imports Energy By EGAT from Laos,,,0,0,0,2002,2002,2122,6.5,100.3,"{nan, nan}",{'GEO': {'GEO-45327'}},,
+64,Kaeng Khoi 2 Power Plant,CCGT,CCGT,PP,TH,1468,IPPS,,,0,0,0,2007,2007,2047,14.605,101.0259,"{nan, nan}","{'GGPT': {'L100000405399'}, 'GEO': {'GEO-41495'}, 'GPD': {'WRI1019482'}}",93,CCGT
+65,Khanom power station,CCGT,CCGT,PP,TH,970,IPPS,,,0,0,0,1991,1991,2031,9.2357,99.8593,{nan},"{'GGPT': {'L100000405400'}, 'GEO': {'GEO-41480'}, 'GPD': {'WRI1019468'}}",344,CCGT
+66,Glow IPP Power Plant,CCGT,CCGT,CHP,TH,713,IPPS,,,0,0,0,2003,,2028,13.064,101.002,"{nan, nan}","{'GGPT': {'L100000405377'}, 'GEO': {'GEO-41496'}, 'GPD': {'WRI1019459'}}",279,CCGT
+67,Ratchaburi Power Company’s Power Plant,CCGT,CCGT,PP,TH,1490,IPPS,,,0,0,0,2020,,2033,13.56,99.8,{nan},,,CCGT
+68,Gulf PD Power gas Plant,CCGT,CCGT,PP,TH,1875,IPPS,,,0,0,0,1996,,2027,12.950169,101.156081,{nan},,,CCGT
+69,"Nong Saeng Power Plant, Thailand (Gulf JP NS)",CCGT,CCGT,PP,TH,1600,IPPS,,,0,0,0,2014,2014,2054,14.4417,100.7756,"{nan, nan}","{'GGPT': {'L100000405409'}, 'GPD': {'WRI1019484'}}",227,CCGT
+70,Sriracha Power Plant,CCGT,CCGT,CHP,TH,700,IPPS,,,0,0,0,2000,1997,2025,13.1115921,100.9067084,"{nan, nan}","{'GGPT': {'L100000405429', 'L100000405427'}, 'GPD': {'WRI1019465'}}",132,CCGT
+71,Surat Thani Power Plant block 2,CCGT,CCGT,PP,TH,701,IPPS,,,0,0,0,2029,,2100,9.071442,99.225492,"{nan, nan}",,,CCGT
+72,The Gulf Sriracha Power Plant (GSRC),CCGT,CCGT,CHP,TH,2500,IPPS,,,0,0,0,2021,2021,2046,13.04,101.07,"{nan, nan}",,,CCGT
+73,"U-Thai Project (Gulf JP UT Co., Ltd.)",CCGT,CCGT,CHP,TH,1600,IPPS,,,0,0,0,2015,,2100,14.35,100.56,"{nan, nan}",,,CCGT
+74,GHECO-One,Hard Coal,Steam Turbine,PP,TH,660,IPPS,,,0,0,0,2012,,2032,12.697,101.168,"{nan, nan}",{'GEO': {'GEO-45301'}},125,Hard Coal
+75,Map Ta Phut (BLCP),Hard Coal,Steam Turbine,PP,TH,1434,IPPS,,,0,0,0,2006,2006,2032,12.6435,101.160536,"{nan, nan}","{'GCPT': {'G100000106655', 'G100000106656'}, 'GEO': {'GEO-41202'}, 'GPD': {'WRI1019458'}}",125,Hard Coal
+76,Ratchaburi Power Plant,CCGT,CCGT,CHP,TH,1440,IPPS,,,0,0,0,2016,2016,2026,13.6068,99.8902,"{nan, nan}",,,CCGT
+77,Ratchaburi Power Plant CC #1-2,CCGT,CCGT,CHP,TH,1360,IPPS,,,0,0,0,2002,,2027,13.6068,99.8902,"{nan, nan}",,,CCGT
+78,Ratchaburi Power Plant CC #3,CCGT,CCGT,CHP,TH,681,IPPS,,,0,0,0,2002,,2027,13.6068,99.8902,"{nan, nan}",,,CCGT
+79,Amata B.Grimm Power (Rayong) 5 Limited,CCGT,CCGT,PP,TH,133,SPPS,,,0,0,0,2018,,2100,12.9823,101.1066,{nan},,,CCGT
+80,Amata B.Grimm Power 1 Limited,CCGT,CCGT,PP,TH,140,SPPS,,,0,0,0,2022,,2100,13.421,101.0273,{nan},,,CCGT
+81,Amata B.Grimm Power 2 Limited,CCGT,CCGT,PP,TH,140,SPPS,,,0,0,0,2022,,2100,13.4219,101.0272,{nan},,,CCGT
+82,Amata B.Grimm Power 3 Limited,CCGT,CCGT,PP,TH,133,SPPS,,,0,0,0,2012,,2100,13.4516,101.0564,{nan},,,CCGT
+83,Amata B.Grimm Power 4 Limited,CCGT,CCGT,PP,TH,131,SPPS,,,0,0,0,2015,,2100,13.4357,101.0562,{nan},,,CCGT
+84,Amata B.Grimm Power 5 Limited,CCGT,CCGT,PP,TH,131,SPPS,,,0,0,0,2016,,2100,13.4356,101.0561,{nan},,,CCGT
+85,B.Grimm BIP Power 1 Limited,CCGT,CCGT,PP,TH,115,SPPS,,,0,0,0,2015,,2100,13.974,100.5649,{nan},,,CCGT
+86,B.Grimm BIP Power 2 Limited,CCGT,CCGT,PP,TH,115,SPPS,,,0,0,0,2016,,2100,13.974,100.5647,{nan},,,CCGT
+87,B.Grimm Power (WHA) 1 Limited,CCGT,CCGT,PP,TH,130,SPPS,,,0,0,0,2016,,2100,13.0653,101.0906,{nan},,,CCGT
+88,Central Utility Plants 2,CCGT,CCGT,CHP,TH,113,SPPS,,,0,0,0,2006,2006,2046,12.7547,101.1637,{nan},"{'GGPT': {'L100000405375'}, 'GEO': {'GEO-45307'}, 'GPD': {'WRI1019464'}}",125,CCGT
+89,EGCO Cogeneration (Rayong) SPP Replacement power plant,CCGT,CCGT,CHP,TH,74,SPPS,,,0,0,0,2024,2024,2055,12.794063,101.199347,"{nan, nan}",{'GGPT': {'L100000405373'}},77,CCGT
+90,Glow Energy Phase 4,CCGT,CCGT,CHP,TH,77,SPPS,,,0,0,0,2005,,2100,12.697,101.168,"{nan, nan}",,,CCGT
+91,Glow SPP 11 Phase 1,CCGT,CCGT,CHP,TH,120,SPPS,,,0,0,0,2000,,2100,12.871,101.218,"{nan, nan}",,,CCGT
+92,Glow SPP 11 Phase 2,CCGT,CCGT,CHP,TH,110,SPPS,,,0,0,0,2012,,2100,12.871,101.218,"{nan, nan}",,,CCGT
+93,Glow SPP 11 Phase 3,CCGT,CCGT,CHP,TH,23,SPPS,,,0,0,0,2006,,2100,12.871,101.218,"{nan, nan}",,,CCGT
+94,Glow SPP 11 Phase 3 expansion,CCGT,CCGT,CHP,TH,19,SPPS,,,0,0,0,2015,,2100,12.871,101.218,"{nan, nan}",,,CCGT
+95,Gulf BL power station,CCGT,CCGT,CHP,TH,127,SPPS,,,0,0,0,2018,2018,2058,14.253049,100.595817,"{nan, nan}","{'GGPT': {'L100000405381', 'L100000405382'}}",123,CCGT
+96,"Gulf JP KP1 Co., Ltd. (GKP1)",CCGT,CCGT,CHP,TH,110,SPPS,,,0,0,0,2013,,2100,14.53,100.91,"{nan, nan}",,,CCGT
+97,"Gulf JP KP2 Co., Ltd. (GKP2)",CCGT,CCGT,CHP,TH,110,SPPS,,,0,0,0,2013,,2100,14.53,100.91,"{nan, nan}",,,CCGT
+98,"Gulf JP NK2 Co., Ltd. (GNK2)",CCGT,CCGT,CHP,TH,120,SPPS,,,0,0,0,2013,,2100,14.53,100.91,"{nan, nan}",,,CCGT
+99,"Gulf JP NLL Co., Ltd. (GNLL)",CCGT,CCGT,CHP,TH,120,SPPS,,,0,0,0,2013,,2100,12.71,101,"{nan, nan}",,,CCGT
+100,"Gulf JP NNK Co., Ltd. (GNNK)",CCGT,CCGT,CHP,TH,110,SPPS,,,0,0,0,2013,,2100,13.6841,101.0664,"{nan, nan}",,,CCGT
+101,"Gulf JP TLC Co., Ltd. (GTLC)",CCGT,CCGT,CHP,TH,100,SPPS,,,0,0,0,2013,,2100,14.53,100.91,"{nan, nan}",,,CCGT
+102,Gulf Tasit 1 power station,CCGT,CCGT,CHP,TH,138.3,SPPS,,,0,0,0,2017,2017,2057,13.0173851,101.1927332,"{nan, nan}",{'GGPT': {'L100000405392'}},398,CCGT
+103,Gulf Tasit 2 power station,CCGT,CCGT,CHP,TH,138.3,SPPS,,,0,0,0,2017,2017,2057,13.0173851,101.1927332,"{nan, nan}",{'GGPT': {'L100000405392'}},398,CCGT
+104,Gulf Tasit 3 power station (GTS3),CCGT,CCGT,CHP,TH,129.9,SPPS,,,0,0,0,2017,2017,2057,13.0648859,101.1851982,"{nan, nan}",{'GGPT': {'L100000405393'}},398,CCGT
+105,"IRPC Clean Power Co., Ltd. (IRPC-CP)",CCGT,CCGT,CHP,TH,180,SPPS,,,0,0,0,2015,,2040,12.66341439,101.3084335,{nan},,,CCGT
+106,Glow Energy CFB 3,Hard Coal,Steam Turbine,PP,TH,85,SPPS,,,0,0,0,2010,,2100,12.697,101.168,"{nan, nan}",{'GEO': {'GEO-45305'}},125,Hard Coal
+107,SSUT Company Limited,CCGT,CCGT,PP,TH,180,SPPS,,,0,0,0,2016,,2100,13.568,100.957,{nan},,,CCGT
+108,Sriracha Thai Oil Company,CCGT,CCGT,CHP,TH,180,SPPS,,,0,0,0,2016,2016,2056,13.1673169,100.9071881,"{nan, nan}",{'GGPT': {'L100000405426'}},132,CCGT
+109,Ratchaburi World Cogeneration Power Plant,CCGT,CCGT,CHP,TH,180,SPPS,,,0,0,0,2012,,2037,13.52,99.93,{nan},,,CCGT
+110,Bangkok HSFC battery Plant power station,store,Storage Technologies,PP,TH,16,SPPS,,,0,0,0,2018,2018,2100,13.45,100.286667,"{nan, nan}",{'GCPT': {'G100000100514'}},14,Other
+111,Amata B. Grimm Power (ABLP) Biomass Thailand,Biomass,Steam Turbine,PP,TH,16,Bioenergy ,,,0,0,0,2014,2014,2114,13.4,101,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+112,National Power Supply (NPS) KK 1 Biomass Thailand,Biomass,Steam Turbine,PP,TH,25,Bioenergy ,,,0,0,0,2010,2010,2110,13.78,101.4,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+113,National Power Supply (NPS) KK 2 Biomass Thailand,Biomass,Steam Turbine,PP,TH,25,Bioenergy ,,,0,0,0,2011,2011,2111,13.78,101.4,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+114,National Power Supply (NPS) KK 3 Biomass Thailand,Biomass,Steam Turbine,PP,TH,25,Bioenergy ,,,0,0,0,2012,2012,2112,13.78,101.4,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+115,BP Group (BPPT) 1 Biomass Thailand,Biomass,Steam Turbine,PP,TH,20,Bioenergy ,,,0,0,0,2013,2013,2113,13.98,101.7,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+116,BP Group (BPPT) 2 Biomass Thailand,Biomass,Steam Turbine,PP,TH,20,Bioenergy ,,,0,0,0,2014,2014,2114,13.98,101.7,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+117,TPCH Kanchana Biomass Thailand,Biomass,Steam Turbine,PP,TH,9.2,Bioenergy ,,,0,0,0,2016,2016,2116,14.03,99.5,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+118,TPCH Chang Raek Biomass Thailand,Biomass,Steam Turbine,PP,TH,9.2,Bioenergy ,,,0,0,0,2018,2018,2118,7.98,99.7,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+119,TPCH Tanyong Biomass Thailand,Biomass,Steam Turbine,PP,TH,9.2,Bioenergy ,,,0,0,0,2019,2019,2119,6.45,101.8,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+120,TPCH Satun Biomass Thailand,Biomass,Steam Turbine,PP,TH,9.2,Bioenergy ,,,0,0,0,2019,2019,2119,6.9,100,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+121,TPCH Pattani Biomass Thailand,Biomass,Steam Turbine,PP,TH,9.2,Bioenergy ,,,0,0,0,2020,2020,2120,6.85,101.25,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+122,TPCH Maha Sarakham (MSPM) Biomass Thailand,Biomass,Steam Turbine,PP,TH,8,Bioenergy ,,,0,0,0,2017,2017,2117,16,103.2,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+123,TPCH Chumphon (CRB) Biomass Thailand,Biomass,Steam Turbine,PP,TH,20,Bioenergy ,,,0,0,0,2017,2017,2117,10.7,99.1,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+124,Double A 1991 (Prachinburi) Biomass Thailand,Biomass,Steam Turbine,PP,TH,150,Bioenergy ,,,0,0,0,2000,2000,2100,13.98,101.7,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+125,Banpu Power (SLP) Biomass Thailand,Biomass,Steam Turbine,PP,TH,25,Bioenergy ,,,0,0,0,2016,2016,2116,17.2,99.8,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+126,IRPC Clean Power Biomass Thailand,Biomass,Steam Turbine,PP,TH,20,Bioenergy ,,,0,0,0,2016,2016,2116,12.68,101.2,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+127,Green Earth Energy (GEE) Mae Sot Biomass Thailand,Biomass,Steam Turbine,PP,TH,9.9,Bioenergy ,,,0,0,0,2013,2013,2113,16.71,98.57,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+128,Thung Sang Energy (TSG) Biomass Thailand,Biomass,Steam Turbine,PP,TH,9.9,Bioenergy ,,,0,0,0,2015,2015,2115,8.4,99.7,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+129,Pichit Power (PPC) Biomass Thailand,Biomass,Steam Turbine,PP,TH,9.9,Bioenergy ,,,0,0,0,2014,2014,2114,16.2,100.5,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+130,Mitr Phol Phu Khieo Biomass Thailand,Biomass,Steam Turbine,PP,TH,50,Bioenergy ,,,0,0,0,2010,2010,2110,16.4,102.2,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+131,Petchaburi Biomass Thailand,Biomass,Steam Turbine,PP,TH,20,Bioenergy ,,,0,0,0,2016,2016,2116,13.1,99.8,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+132,Chumporn Palm Oil Industry (CPI) Biomass Thailand,Biomass,Steam Turbine,PP,TH,10,Bioenergy ,,,0,0,0,2015,2015,2115,10.5,99.1,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+133,Thai Renewable Energy (TREC) Nakhon Sawan Biomass Thailand,Biomass,Steam Turbine,PP,TH,9.9,Bioenergy ,,,0,0,0,2014,2014,2114,15.68,100.12,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+134,Siam Biomass Power (SBP) Surin Biomass Thailand,Biomass,Steam Turbine,PP,TH,9.9,Bioenergy ,,,0,0,0,2015,2015,2115,14.9,103.5,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+135,PLT Power Ayutthaya Biomass Thailand,Biomass,Steam Turbine,PP,TH,9.9,Bioenergy ,,,0,0,0,2016,2016,2116,14.35,100.57,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+136,Siam Future Energy (SFE) Biogas Thailand,Biomass,Steam Turbine,PP,TH,3,Bioenergy ,,,0,0,0,2010,2010,2110,13.9,100.2,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+137,Mae Tao Energy Biogas Thailand,Biomass,Steam Turbine,PP,TH,3,Bioenergy ,,,0,0,0,2014,2014,2114,9.1,99.3,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+138,Chumporn Palm Oil Industry (CPI) Biogas 1 Thailand,Biomass,Steam Turbine,PP,TH,2.5,Bioenergy ,,,0,0,0,2015,2015,2115,10.5,99.1,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+139,Nong Khaem Waste-to-Energy Thailand,Biomass,Steam Turbine,PP,TH,20,Bioenergy ,,,0,0,0,2017,2017,2117,13.7,100.35,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+140,Phuket Provincial Waste-to-Energy Thailand,Biomass,Steam Turbine,PP,TH,12,Bioenergy ,,,0,0,0,2017,2017,2117,7.89,98.39,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+141,Samut Prakan Waste-to-Energy Thailand,Biomass,Steam Turbine,PP,TH,8,Bioenergy ,,,0,0,0,2018,2018,2118,13.55,100.6,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+142,Khon Kaen Waste-to-Energy Thailand,Biomass,Steam Turbine,PP,TH,10,Bioenergy ,,,0,0,0,2019,2019,2119,16.43,102.83,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+143,Hat Yai Waste-to-Energy Thailand,Biomass,Steam Turbine,PP,TH,10,Bioenergy ,,,0,0,0,2020,2020,2120,7,100.47,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+144,Bangkok (On Nut) Waste-to-Energy Thailand,Biomass,Steam Turbine,PP,TH,35,Bioenergy ,,,0,0,0,2025,2025,2125,13.7,100.68,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+145,Biomass Power Plant in Kamphaengphet Thailand,Biomass,Steam Turbine,PP,TH,5.63,Bioenergy ,,,0,0,0,2015,2015,2115,16.48,99.52,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+146,Biomass Power Plant in Lampoon Thailand,Biomass,Steam Turbine,PP,TH,9.6,Bioenergy ,,,0,0,0,2015,2015,2115,18.57,99,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+147,Chonburi Clean Energy Thailand,Biomass,Steam Turbine,CHP,TH,3,Bioenergy ,,,0,0,0,2019,2019,2119,13.064,101.036,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+148,Green to Energy (G2E) Biogas Power Plant Thailand,Biomass,Steam Turbine,PP,TH,1.5,Bioenergy ,,,0,0,0,2014,2014,2114,14.8,101,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+149,Khon Kaen Sugar Co Ltd Biomass Thailand,Biomass,Steam Turbine,PP,TH,287,Bioenergy ,,,0,0,0,2000,2000,2100,16.48,102.83,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+150,Khonburi Sugar Public Company Limited Biomass Thailand,Biomass,Steam Turbine,PP,TH,22,Bioenergy ,,,0,0,0,2013,2013,2113,14.37,102.21,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+151,Mitr Phol Bio Dan Chang Co Ltd Biomass Thailand,Biomass,Steam Turbine,PP,TH,320,Bioenergy ,,,0,0,0,2005,2005,2105,14.77,99.88,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+152,Nong Khaem Biomass Thailand,Biomass,Steam Turbine,PP,TH,30,Bioenergy ,,,0,0,0,2018,2018,2118,13.68,100.34,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+153,PP11 Power Plant Thailand,Biomass,Steam Turbine,PP,TH,32.9,Bioenergy ,,,0,0,0,2019,2019,2119,12.8,101.4,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+154,PP2 Power Plant Thailand,Biomass,Steam Turbine,PP,TH,10.4,Bioenergy ,,,0,0,0,2015,2015,2115,14,100,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+155,PP3 Power Plant Thailand,Biomass,Steam Turbine,PP,TH,10.4,Bioenergy ,,,0,0,0,2015,2015,2115,14,100.1,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+156,PP4 Power Plant Thailand,Biomass,Steam Turbine,PP,TH,37.15,Bioenergy ,,,0,0,0,2018,2018,2118,13,101.5,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+157,PP5 Power Plant Thailand,Biomass,Steam Turbine,PP,TH,37.15,Bioenergy ,,,0,0,0,2018,2018,2118,13,101.6,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+158,PP5A Power Plant Thailand,Biomass,Steam Turbine,PP,TH,98,Bioenergy ,,,0,0,0,2019,2019,2119,13.7,101.7,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+159,PP6 Power Plant Thailand,Biomass,Steam Turbine,PP,TH,37.15,Bioenergy ,,,0,0,0,2018,2018,2118,13,101.7,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+160,PP9 Power Plant Thailand,Biomass,Steam Turbine,PP,TH,135,Bioenergy ,,,0,0,0,2014,2014,2114,13.78,101.4,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+161,SGEC (Southern Green Energy) Biomass Power Plant Surat Thani Thailand,Biomass,Steam Turbine,PP,TH,9.95,Bioenergy ,,,0,0,0,2016,2016,2116,9.1,99.3,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+162,Songkla Biomass Company Limited Power Plant Thailand,Biomass,Steam Turbine,PP,TH,9.9,Bioenergy ,,,0,0,0,2015,2015,2115,7.2,100.6,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+163,Thachang Green Energy (TGE) Group Biomass Thailand,Biomass,Steam Turbine,PP,TH,29.7,Bioenergy ,,,0,0,0,2018,2018,2118,9.1,99.4,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+164,VSPP Biomass Buri Ram 2008 Thailand,Biomass,Steam Turbine,PP,TH,9.5,Bioenergy ,,,0,0,0,2008,2008,2108,15,103,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+165,VSPP Biomass Chonburi 2012 Thailand,Biomass,Steam Turbine,PP,TH,9.9,Bioenergy ,,,0,0,0,2012,2012,2112,13.35,101,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+166,VSPP Biomass Kamphaeng Phet 2021 Thailand,Biomass,Steam Turbine,PP,TH,9.9,Bioenergy ,,,0,0,0,2021,2021,2121,16.48,99.52,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+167,VSPP Biomass Kanchanaburi 2017 Thailand,Biomass,Steam Turbine,PP,TH,9.9,Bioenergy ,,,0,0,0,2017,2017,2117,14,99.5,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+168,VSPP Biomass Khon Kaen 2012 Thailand,Biomass,Steam Turbine,PP,TH,9.9,Bioenergy ,,,0,0,0,2012,2012,2112,16.48,102.83,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+169,VSPP Biomass Lampang 2014 Thailand,Biomass,Steam Turbine,PP,TH,9.9,Bioenergy ,,,0,0,0,2014,2014,2114,18.29,99.5,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+170,VSPP Biomass Nakhon Ratchasima 2011 Unit 2 Thailand,Biomass,Steam Turbine,PP,TH,9.9,Bioenergy ,,,0,0,0,2011,2011,2111,14.97,102.09,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+171,VSPP Biomass Nakhon Ratchasima 2013 Unit 1 Thailand,Biomass,Steam Turbine,PP,TH,9.9,Bioenergy ,,,0,0,0,2013,2013,2113,14.97,102.09,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+172,VSPP Biomass Nong Khai 2013 Thailand,Biomass,Steam Turbine,PP,TH,9.9,Bioenergy ,,,0,0,0,2013,2013,2113,17.88,102.73,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+173,VSPP Biomass Roi Et 2013 Thailand,Biomass,Steam Turbine,PP,TH,9.9,Bioenergy ,,,0,0,0,2013,2013,2113,16.05,103.65,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+174,VSPP Biomass Surin 2012 Thailand,Biomass,Steam Turbine,PP,TH,9.9,Bioenergy ,,,0,0,0,2012,2012,2112,14.9,103.5,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+175,VSPP Biomass Ubon Ratchathani 2015 Thailand,Biomass,Steam Turbine,PP,TH,9.9,Bioenergy ,,,0,0,0,2015,2015,2115,15.22,104.85,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+176,Progress Interchem (Thailand) Co. Ltd. Waste Power Plant Thailand,Biomass,Steam Turbine,PP,TH,5,Bioenergy ,,,0,0,0,2018,2018,2118,13.55,100.6,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+177,VSPP MSW Khon Kaen 2016 Thailand,Biomass,Steam Turbine,PP,TH,6,Bioenergy ,,,0,0,0,2016,2016,2116,16.43,102.83,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+178,VSPP MSW Krabi 2020 Thailand,Biomass,Steam Turbine,PP,TH,6,Bioenergy ,,,0,0,0,2020,2020,2120,8.08,98.9,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+179,Northeast Region Biomass Potential (Rice Husk/Cassava) 2 Thailand,Biomass,Steam Turbine,PP,TH,500,Bioenergy ,,,0,0,0,2026,2026,2126,15.5,104,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+180,Central Region Biomass Potential (Bagasse/Rice Husk) 2 Thailand,Biomass,Steam Turbine,PP,TH,500,Bioenergy ,,,0,0,0,2026,2026,2126,15,100,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+181,Southern Region Biomass Potential (Palm/Rubber) 1 Thailand,Biomass,Steam Turbine,PP,TH,400,Bioenergy ,,,0,0,0,2025,2025,2125,8,99.5,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+182,Southern Region Biomass Potential (Palm/Rubber) 2 Thailand,Biomass,Steam Turbine,PP,TH,300,Bioenergy ,,,0,0,0,2026,2026,2126,6.5,100.7,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+183,Northern Region Biomass Potential (Wood/Corn Stover) Thailand,Biomass,Steam Turbine,PP,TH,300,Bioenergy ,,,0,0,0,2025,2025,2125,18,99,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+184,Industrial Biogas Potential (Various Regions) Thailand,Biomass,Steam Turbine,PP,TH,250,Bioenergy ,,,0,0,0,2025,2025,2125,13,100,"{nan, nan}",{'GEO': {'GEO-45327'}},,Renewable
+185,Thailand SMR-1,Nuclear,SMR,PP,TH,300,EGAT,0.91,0,0,0,0,2035,2035,2100,13.7563,100.5018,{nan},{nan},0,Nuclear
+186,Thailand SMR-2,Nuclear,SMR,PP,TH,300,EGAT,0.91,0,0,0,0,2037,2037,2100,13.7563,100.5018,{nan},{nan},0,Nuclear
+187,Songkla coal Power Plant Thailand,Hard Coal,Steam Turbine,PP,TH,5233,EGAT,,,0,0,0,2029,2030,2053,7.2,100.6,"{nan, nan}",{'GEO': {'GEO-45327'}},,Coal

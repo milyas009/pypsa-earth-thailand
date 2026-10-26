@@ -1,0 +1,19 @@
+# Calibration overlay: reproduce Thailand's 2022 power system and compare with Ember 2022.
+# Use with:  snakemake --configfile config_TH2022_calib.yaml ...   (applied on top of config.yaml)
+run:
+  name: "TH2022_calib"
+scenario:
+  planning_horizons: [2022]
+load_options:
+  prediction_year: 2022     # custom data/ssp2-2.6/2022/era5_2022/Asia.csv
+electricity:
+  powerplants_filter: (DateOut >= 2022 or DateOut != DateOut) and (DateIn <= 2022 or DateIn != DateIn)
+  extendable_carriers:      # existing fleet only; capacities fixed through the limits file below
+    Generator: [solar, onwind, CCGT, biomass]
+    StorageUnit: []
+    Store: []
+    Link: []
+  agg_p_nom_limits:
+    file: data/thailand/agg_p_nom_minmax_2022_existing.csv
+costs:
+  year: 2025                # closest technology-data year to 2022

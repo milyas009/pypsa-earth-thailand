@@ -1,0 +1,13 @@
+,,2037,2037
+,,min,max
+country,carrier,,
+TH,solar,3174.0,
+TH,onwind,1536.8,
+TH,offwind-ac,0.0,
+TH,offwind-dc,0.0,
+TH,biomass,4154.7,6135.7
+TH,CCGT,16446.5,22746.5
+TH,ror,151.2,250.2
+TH,geothermal,0.3,21.3
+TH,nuclear,600.0,600.0
+TH,battery,0.0,10485.0

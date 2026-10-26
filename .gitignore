@@ -1,0 +1,7 @@
+networks/
+resources/
+cutouts/
+paper_outputs/
+*.nc
+__pycache__/
+.DS_Store

@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this model or data, please cite the paper and PyPSA-Earth."
+title: "PyPSA-Earth model of Thailand: draft Power Development Plan 2024-2037"
+authors:
+  - family-names: Ilyas
+    given-names: Muhammad
+    affiliation: "International College of Digital Innovation, Chiang Mai University"
+  - family-names: Suyaroj
+    given-names: Naret
+    affiliation: "International College of Digital Innovation, Chiang Mai University"
+  - family-names: Kuensaen
+    given-names: Chakrapong
+    affiliation: "International College of Digital Innovation, Chiang Mai University"
+license: AGPL-3.0-or-later
+repository-code: "https://github.com/milyas009/pypsa-earth-thailand"

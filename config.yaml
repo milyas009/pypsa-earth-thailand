@@ -1,0 +1,132 @@
+# SPDX-FileCopyrightText: PyPSA-Earth and PyPSA-Eur Authors
+#
+# SPDX-License-Identifier: CC0-1.0
+
+# Thailand overrides for PyPSA-Earth v0.10.
+# Only settings that differ from config.default.yaml are listed here; everything else
+# uses the v0.10 defaults. Scenario-specific changes (Lao imports, new OCGT, capacity limits,
+# sensitivities) are applied in thailand/solve_thailand.py.
+
+version: 0.10.0
+
+countries: ["TH"]
+
+enable:
+  retrieve_databundle: false  # data bundles downloaded once beforehand
+  retrieve_cutout: false   # use the local 2022 ERA5 cutout below (bundled cutout is 2013)
+  build_cutout: false
+  retrieve_cost_data: true # technology-data v0.15.0; do not use the old customised data/costs.csv
+
+run:
+  name: "TH2037_base"
+
+scenario:
+  clusters: [6]
+  opts: [CCL]              # hourly; add e.g. "-3h" for faster test runs
+  planning_horizons: [2037]
+
+snapshots:
+  start: "2022-01-01"
+  end: "2023-01-01"
+
+load_options:
+  source: "gegis"
+  weather_year: 2022       # uses the custom data/ssp2-2.6/2037/era5_2022/Asia.csv
+  prediction_year: 2037
+
+electricity:
+  extendable_carriers:
+    Generator: [solar, onwind, offwind-ac, offwind-dc, OCGT, CCGT, biomass, ror, nuclear]
+    StorageUnit: [PHS]   # batteries are modelled as Store + links (v0.10 default)
+    Store: [battery, H2]
+    Link: []
+
+  powerplants_filter: (DateOut >= 2037 or DateOut != DateOut) and (DateIn <= 2037 or DateIn != DateIn)
+  custom_powerplants:
+    filepaths:
+    - data/thailand/custom_powerplants_TH.csv
+    method: replace
+  # Hongsa (Lao PDR) is listed as lignite; Lao hydropower imports are added in thailand/solve_thailand.py.
+
+  voltages: [115., 132., 230., 300., 380., 500.]
+
+  agg_p_nom_limits:
+    file: data/thailand/agg_p_nom_minmax_PDP2024_2037.csv
+    include_existing: false # v0.10 stores existing capacity inside the extendable generators (as p_nom_min),
+                            # so totals in the file are compared with total capacity; "true" would subtract it twice
+
+  operational_reserve:
+    # not used in this study (operating reserves are outside its scope)
+    activate: false
+    epsilon_load: 0.01
+    epsilon_vres: 0.01
+    contingency: 200
+
+lines:
+  use_country_specific_types: true
+  ac_types:
+    TH:  # map Thai voltage levels to the closest PyPSA line types
+      115.: "243-AL1/39-ST1A 110.0"
+      132.: "243-AL1/39-ST1A 110.0"
+      230.: "Al/St 240/40 2-bundle 220.0"
+      300.: "Al/St 240/40 3-bundle 300.0"
+      380.: "Al/St 240/40 4-bundle 380.0"
+      500.: "Al/St 240/40 4-bundle 380.0"
+
+atlite:
+  cutouts:
+    cutout-2022-era5-SEA:  # ERA5 2022, South-East Asia (see README for how to build it)
+      module: era5
+      dx: 0.3
+      dy: 0.3
+  default: cutout-2022-era5-SEA
+
+renewable:
+  onwind:
+    capacity_per_sqkm: 4.9
+    correction_factor: 3.0   # calibrated: reproduces Ember 2022 wind CF of 22.0% (2.99 TWh / 1.55 GW); best fit 3.03
+  offwind-ac:
+    capacity_per_sqkm: 5.0
+    max_depth: 80
+    max_shore_distance: 70000
+  offwind-dc:
+    capacity_per_sqkm: 6.0
+    min_shore_distance: 18000
+  solar:
+    capacity_per_sqkm: 5.5
+    correction_factor: 1.09  # calibrated: reproduces Ember 2022 solar CF of 18.0% (5.03 TWh / 3.19 GW)
+  hydro:
+    PHS_max_hours: 12
+    # Thailand is missing from data/hydro_capacities.csv and the plant list has no storage data, so this default applies.
+    # Estimate from active storage x head (~65% of dam height) x 90%: Bhumibol 9,762 Mm3 / 779 MW -> ~3,100 h,
+    # Sirikit 6,666 Mm3 / 500 MW -> ~2,500 h (Wikipedia, EGAT); 2,500 h used (multi-purpose irrigation reservoirs)
+    hydro_max_hours_default: 2500.0
+    clip_min_inflow: 0.1
+    extendable: false        # existing dams only
+    multiplier: 1.4          # calibrated: IRENA-normalised inflow gave 4.7 TWh domestic hydro in 2022 vs Ember 6.6 TWh
+
+costs:
+  year: 2035  # technology-data v0.15.0 has no 2037 file (5-year steps); 2035 is the closest
+
+solving:
+  solver:
+    name: gurobi
+
+existing_capacities:
+  # plant list contains units commissioned up to 2037 (Thai SMRs 2035/2037); default bins end at 2030
+  grouping_years_power: [1960, 1965, 1970, 1975, 1980, 1985, 1990, 1995, 2000, 2005, 2010, 2015, 2020, 2025, 2030, 2035, 2040]
+
+conventional:
+  # calibrated to 2022 (Ember): coal+lignite ran at ~70% (gas take-or-pay contracts take priority),
+  # biomass at ~85% (13.9 TWh from 1.87 GW). See results/TH2022_calib/scenarios/calibration_vs_ember2022.csv
+  coal:
+    p_max_pu: 0.70
+  lignite:
+    p_max_pu: 0.70
+  biomass:
+    p_max_pu: 0.85
+
+augmented_line_connection:
+  # the OSM-based network leaves node TH1 0 (central Thailand, ~1% of load) as an isolated island;
+  # add the minimum new lines so that every node has at least two connections
+  add_to_snakefile: true

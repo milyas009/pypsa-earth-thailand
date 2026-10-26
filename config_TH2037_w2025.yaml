@@ -1,0 +1,16 @@
+# Weather-year overlay: 2037 system with ERA5 2025 weather (demand held at the 2022 profile, re-dated).
+# Use with:  snakemake --configfile config_TH2037_w2025.yaml ...   (applied on top of config.yaml)
+run:
+  name: "TH2037_w2025"
+snapshots:
+  start: "2025-01-01"
+  end: "2026-01-01"
+load_options:
+  weather_year: 2025      # data/ssp2-2.6/2037/era5_2025/Asia.csv
+atlite:
+  cutouts:
+    cutout-2025-era5-TH:
+      module: era5
+      dx: 0.3
+      dy: 0.3
+  default: cutout-2025-era5-TH

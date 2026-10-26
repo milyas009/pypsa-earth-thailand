@@ -1,0 +1,17 @@
+country,carrier,min,max
+TH,solar,3174.11105,27093
+TH,onwind,1536.75,5345
+TH,biomass,1000,1045
+TH,biogas,0,936
+TH,geothermal,0,21
+TH,hydro,2725,2824
+TH,CCGT,15000,31737
+TH,coal,3000,3870
+TH,lignite,2200,0
+TH,oil,30.4,30.4
+TH,battery,0,10485
+TH,PHS,0,2472
+TH,H2,0,10000
+TH,imports,0,3500
+TH,electrolysis,0,5000
+TH,H2_storage,0,50000 
