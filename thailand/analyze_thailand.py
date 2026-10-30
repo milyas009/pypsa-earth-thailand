@@ -101,7 +101,7 @@ def capacity_ceiling(run="TH2037_base", lao_mw=3565.0 + 3500.0, lao_cf=0.60):
     n = pypsa.Network(ROOT / f"networks/{run}/elec_s_6_ec_lcopt_CCL.nc")
     w = n.snapshot_weightings.generators
     lim = pd.read_csv(ROOT / "data/thailand/agg_p_nom_minmax_PDP2024_2037.csv", index_col=[0, 1], header=[0, 1])["2037"]["max"].droplevel(0)
-    pmax = n.get_switchable_as_dense("Generator", "p_max_pu")
+    pmax = n.get_switchable_as_dense("Generator", "p_max_pu").clip(upper=1.0)  # as in the solve (cap_availability)
     g = n.generators
     rows = {}
     for c in ["solar", "onwind", "offwind-ac", "offwind-dc", "biomass", "ror", "geothermal"]:

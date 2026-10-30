@@ -161,6 +161,16 @@ def apply_sensitivities(n, run, cost_year, gas_factor, solar_cost_factor, load_f
         n.loads_t.p_set *= load_factor
 
 
+def cap_availability(n):
+    """Hourly availability of renewable generators cannot exceed installed capacity. The wind correction factor
+    (calibration to Ember 2022) scales the atlite profile linearly and can push single hours above 1; such hours are
+    capped here, after clustering, without changing the framework."""
+    pmax = n.generators_t.p_max_pu
+    over = int((pmax > 1.0).to_numpy().sum())
+    n.generators_t.p_max_pu = pmax.clip(upper=1.0)
+    return over
+
+
 def solve(name, limits, run, horizon, cost_year, lao_mw, ocgt, overlay=None, fix_vre=False,
           gas_factor=1.0, solar_cost_factor=1.0, load_factor=1.0, lao_cf=LAO_HYDRO_CF, hydro_ratio=None, lao_must_take=False):
     config = load_config(overlay)
@@ -178,6 +188,7 @@ def solve(name, limits, run, horizon, cost_year, lao_mw, ocgt, overlay=None, fix
     pe.n_ref = None
 
     n = pypsa.Network(ROOT / f"networks/{run}/elec_s_6_ec_lcopt_CCL.nc")
+    print(f"{name}: hourly availability values above 1 capped: {cap_availability(n)}")
 
     # as in solve_network.py __main__: lines added by augmented_line_connection get a minimum size
     aug = config["augmented_line_connection"]

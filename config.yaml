@@ -84,7 +84,13 @@ atlite:
 renewable:
   onwind:
     capacity_per_sqkm: 4.9
-    correction_factor: 3.0   # calibrated: reproduces Ember 2022 wind CF of 22.0% (2.99 TWh / 1.55 GW); best fit 3.03
+    resource:
+      method: wind
+      turbine: NREL_ReferenceTurbine_2020ATB_4MW  # low-specific-power onshore turbine (NREL ATB 2020), as built in Thailand
+    # calibrated on the 2022 network (thailand/solve_thailand.py CALIB2022): with hourly availability capped at 1
+    # (solve_thailand.cap_availability) the existing 1.50 GW give 2.24 TWh, the level of the earlier calibration
+    # (Ember 2022: 2.99 TWh; ERA5 underestimates the ridge sites of the Thai wind farms; matching it would need 2.91)
+    correction_factor: 2.08
   offwind-ac:
     capacity_per_sqkm: 5.0
     max_depth: 80

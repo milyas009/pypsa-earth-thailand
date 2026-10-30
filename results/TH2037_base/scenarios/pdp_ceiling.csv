@@ -1,6 +1,6 @@
 ,cap_GW,best_CF,TWh,share_pct
 solar,30.267,0.182,48.309,
-onwind,6.882,0.29,17.48,
+onwind,6.882,0.277,16.688,
 offwind-ac,0.0,0.16,0.0,
 offwind-dc,0.0,0.165,0.0,
 biomass,6.136,0.85,45.686,
@@ -8,5 +8,5 @@ ror,0.25,0.48,1.052,
 geothermal,0.021,1.0,0.187,
 imports,7.065,0.6,37.134,
 hydro (inflow),2.108,,7.738,
-TOTAL,,,157.586,49.272
-TOTAL excl. imports,,,120.452,37.662
+TOTAL,,,156.794,49.025
+TOTAL excl. imports,,,119.66,37.414
