@@ -2,7 +2,7 @@
 
 Model setup, input data, scripts and result summaries for the paper
 
-> Ilyas, M., Suyaroj, N., Kuensaen, C. *Can national power plans meet their own renewable targets? A calibrated multi-weather-year test of Thailand's draft Power Development Plan 2024–2037* (manuscript submitted to *Energy Policy*).
+> Ilyas, M., Suyaroj, N., Kuensaen, C. *Can national power plans meet their own renewable targets? A calibrated multi-weather-year test of Thailand's draft Power Development Plan 2024–2037* (manuscript in preparation for *Energy Policy*).
 
 The model is an hourly, six-node representation of the Thai power system in 2037, built with
 [PyPSA-Earth](https://github.com/pypsa-meets-earth/pypsa-earth) v0.10.0 and calibrated to observed
